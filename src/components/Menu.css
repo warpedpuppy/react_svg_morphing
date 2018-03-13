@@ -1,0 +1,19 @@
+nav {
+	background:grey;
+	width:100%;
+	border-bottom:1px;
+	font-size: 20px;
+}
+nav h1 {
+	display: inline-block;
+	margin:0;
+	border:1px solid black;
+	transition: margin 0.5s;
+}
+
+
+@media (min-width: 1024px) {
+	nav h1 {
+		margin:0 45%;
+	}
+}
