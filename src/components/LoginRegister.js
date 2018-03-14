@@ -2,8 +2,7 @@ import React from 'react';
 import Blob1 from '../blob1.svg';
 import './LoginRegister.css';
 import { TweenMax, Elastic, CSSPlugin } from 'gsap';
-import MorphSVGPlugin from "gsap/MorphSVGPlugin"; 
-
+//import MorphSVGPlugin from "gsap/MorphSVGPlugin"; // this is if you want it from node_modules
 export default class LoginRegister extends React.Component {
     constructor(props){
        super(props);
