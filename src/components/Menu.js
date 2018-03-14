@@ -25,7 +25,7 @@ export default class Menu extends Component {
 	  render() {
 
 	  	let loginClass = (this.state.loginShow)?'':'hide';
-	  	let showDropDownClass = (this.state.showDropDown)?'':'open';
+	  	let showDropDownClass = (this.state.showDropDown)?'open':'';
 	    return (
 			<div>
 				<nav>
