@@ -2,6 +2,6 @@ import React from 'react';
 import './Home.css';
 export default function Home () {
     return (
-      <h1 className="homeH1">home</h1>
+      <h1 className="homeH1"></h1>
     );
 }

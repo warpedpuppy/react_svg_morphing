@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.css';
+import LoginRegister from './LoginRegister';
 
 export default class Menu extends Component {
 	  constructor(props) {
 		super(props);
 		this.state = {
-			loginShow: false,
+			loginShow: true,
 			showDropDown:false
 		}
 	  }
@@ -28,19 +29,22 @@ export default class Menu extends Component {
 	    return (
 			<div>
 				<nav>
-					<h1>trying something</h1>
+					<div class="not-links">
+						<h1>trying something</h1>
+						<div className="hamburger" onClick={() => this.showDropDown()}>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
 					<div  className={`links  ${showDropDownClass}`}>
 						<Link to="/">home</Link>
 						<Link to="/about">about</Link>
 						<a onClick={(e) => this.loginShow(e)}>login</a>
 					</div>
-					<div className="hamburger" onClick={() => this.showDropDown()}>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+					
 				</nav>
-				<div className={`logInForm  ${loginClass} `}><h1>log in form placeholder</h1></div>
+				<LoginRegister loginShow={this.state.loginShow} />
 			</div>
 	    );
 	  }

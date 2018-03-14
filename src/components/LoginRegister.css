@@ -1,0 +1,80 @@
+.st0{fill:#FF00FF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;display:none;}
+.st1{fill:#FF0000;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+
+.loginRegister {
+	position: relative;
+	margin:0 auto;
+	width:100%;
+	padding:0;
+	text-align: center;
+}
+.loginRegister .buttonContainer {
+	margin-top:40px;
+	text-align: center;
+}
+.loginRegister svg {
+	position:absolute;
+	top:15%;
+	left:0;
+	padding:0;
+	margin:0 auto;
+	z-index: -1;
+	
+}
+
+.loginRegister .buttonContainer button {
+	font-size: 30px;
+	border:5px solid black;
+	border-radius: 5px;
+	padding:5px 10px;
+	margin:20px;
+	cursor:pointer;
+}
+
+.loginRegister form {
+	font-size: 30px;
+	border: 5px solid black;
+	border-radius:10px;
+	padding:20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5)
+
+}
+.loginRegister form input{
+	display:block;
+	padding:10px;
+	border-radius:10px;	
+	border: 5px solid black;
+	margin:5px 0;
+}
+.loginRegister form input[type="submit"]{
+	float:right;
+}
+.showIB {
+	display: inline-block;
+}
+
+@media (min-width: 800px) {
+	.loginRegister {
+		position: relative;
+		margin:0 auto;
+		width:800px;
+		padding:50px;
+		text-align: center;
+	}
+	.loginRegister .buttonContainer {
+		margin-top:-20px;
+		text-align: center;
+	}
+	.loginRegister svg {
+		position:absolute;
+		top:0;
+		left:0;
+		width: 800px;
+		padding: 50px;
+		margin:0 auto;
+		z-index: -1;
+		
+	}
+
+}
